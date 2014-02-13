@@ -76,7 +76,10 @@ if (!needToLoadForm())
 }
 else
 {
-   $customDataset = $_GET["cds"];
+   $customDataset = false;
+   if(isset($_GET['cds'])) {
+      $customDataset = $_GET["cds"];
+   }
 
    buildStartHTML();
    buildFormHTML($customDataset);
