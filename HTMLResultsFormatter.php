@@ -79,7 +79,7 @@ Add these dollar values to your fantasy league homepage (requires Firefox + Grea
 <a href="gmbuild.php?<?php print $queryString ?>&gm=C&x=.user.js">CBSSports</a>
 </div>
 
-<?
+<?php
    }
 
    private function printLeagueStats($request, $results, $queryString, $debugMode)
